@@ -8,6 +8,10 @@ Integrate Nginx + Redis + MariaDB with Redmine
 [root@ruo91 ~]# docker build --rm -t redmine:latest /opt/docker-redmine
 [root@ruo91 ~]# docker run -d --name="redmine" -h "redmine" -p 80:80 redmine:latest
 ```
+Or
+```sh
+[root@ruo91 ~]# docker run -d --name="redmine" -h "redmine" -p 80:80 ruo91/redmine
+```
 
 #### Version
 ------------
