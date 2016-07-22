@@ -68,7 +68,7 @@ RUN cd $REDMINE_HOME \
  && bundle exec rake generate_secret_token \
  && service mysql start \
  && bundle exec rake db:migrate \
- && bundle exec rake REDMINE_LANG=ko redmine:load_default_data \
+ && bundle exec rake REDMINE_LANG=en redmine:load_default_data \
  && mkdir -p tmp tmp/pdf public/plugin_assets \
  && chown -R redmine:redmine files log tmp public/plugin_assets \
  && chmod -R 755 files log tmp public/plugin_assets
